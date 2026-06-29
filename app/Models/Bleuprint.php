@@ -8,7 +8,7 @@ class Bleuprint extends Model
 {  
     
 protected $fillable=
-    ['name','tone',,'max_characters','max_hashtags','user_id'];
+    ['name','tone','max_hashtags','max_caracteres','user_id'];
     
     
     public function user (){

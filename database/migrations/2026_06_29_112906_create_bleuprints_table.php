@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('tone');
-            $table->integer('max_hachtags');
+            $table->integer('max_hashtags');
             $table->integer('max_caracteres');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
