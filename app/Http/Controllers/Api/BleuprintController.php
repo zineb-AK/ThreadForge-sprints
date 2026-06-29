@@ -12,7 +12,8 @@ class BleuprintController extends Controller
      */
     public function index()
     {
-        //
+        $bleuprints = auth()->user()->bleuprints()->get();
+        return response()->json($bleuprints);
     }
 
     /**
@@ -26,9 +27,9 @@ class BleuprintController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Bleuprint $bleuprint)
     {
-        //
+    return response()->json($bleuprint);
     }
 
     /**
