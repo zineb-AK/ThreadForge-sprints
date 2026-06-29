@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\BlueprintResource;
 use App\Models\Bleuprint;
 use Illuminate\Http\Request;
 
@@ -11,11 +12,12 @@ class BleuprintController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        $bleuprints = auth()->user()->bleuprints()->get();
-        return response()->json($bleuprints);
-    }
+  public function index()
+{
+    $bleuprints = Bleuprint::where('user_id', auth()->id())->get();
+
+    return BlueprintResource::collection($bleuprints);
+}
 
     /**
      * Store a newly created resource in storage.
