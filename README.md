@@ -46,7 +46,7 @@ ThreadForge API is a RESTful API developed with **Laravel 12** and secured using
 
 Successful authentication using Laravel Sanctum.
 
-![](image-1.png)
+<img width="1125" height="835" alt="Capture d&#39;écran 2026-06-29 151016" src="https://github.com/user-attachments/assets/4142e73d-60d7-4535-9b07-7b9ed12f5167" />
 
 ---
 
@@ -54,5 +54,5 @@ Successful authentication using Laravel Sanctum.
 
 Retrieving all blueprints associated with the authenticated user.
 
-![](image-1.png)
+<img width="1066" height="855" alt="Capture d&#39;écran 2026-06-29 151726" src="https://github.com/user-attachments/assets/70acbc76-8d3a-4f68-a74c-69b9a78e4dab" />
 ```
