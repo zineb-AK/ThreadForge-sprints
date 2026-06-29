@@ -46,7 +46,7 @@ ThreadForge API is a RESTful API developed with **Laravel 12** and secured using
 
 Successful authentication using Laravel Sanctum.
 
-![alt text](image.png)
+![](image-1.png)
 
 ---
 
